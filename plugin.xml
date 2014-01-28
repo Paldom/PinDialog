@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="org.apache.cordova.core.dialogs"
+      version="0.1.0">
+
+    <name>PinDialog</name>
+    
+	<description>
+			PhoneGap numeric password dialog plugin for Android and iOS. Forked from https://github.com/apache/cordova-plugin-dialogs.git
+	<license>MIT</license>
+	<keywords>phonegap,android,ios,numeric,password,pin,dialog</keywords>
+
+	<js-module src="www/pin.js" name="PinDialog">
+	  <merges target="window.plugins.pinDialog" />
+	</js-module>
+	
+	<!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PinDialog">
+                <param name="android-package" value="hu.dpal.phonegap.plugins.PinDialog"/>
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/PinDialog.java" target-dir="src/hu/dpal/phonegap/plugins" />
+        
+    </platform>
+
+	<!-- ios -->
+	<platform name="ios">
+	  <config-file target="config.xml" parent="/*">
+		<feature name="PinDialog">
+		  <param name="ios-package" value="PinDialog"/>
+		</feature>
+	  </config-file>
+
+	  <header-file src="src/ios/CDVPinDialog.h" />
+	  <source-file src="src/ios/CDVPinDialog.m" />
+	</platform>
+	
+</plugin>
+
