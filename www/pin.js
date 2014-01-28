@@ -1,8 +1,7 @@
-//var exec = require('cordova/exec');
+var exec = require('cordova/exec');
 
 
-// module.exports = {
-var pinDialog = {
+module.exports = {
 
 	prompt: function(message, resultCallback, title, buttonLabels) {
         var _message = (message || "Message");
