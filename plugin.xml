@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
            id="hu.dpal.phonegap.plugins.PinDialog"
-      version="0.1.1">
+      version="0.1.2">
 
     <name>PinDialog</name>
     
@@ -32,7 +32,7 @@
 	<platform name="ios">
 	  <config-file target="config.xml" parent="/*">
 		<feature name="PinDialog">
-		  <param name="ios-package" value="PinDialog"/>
+		  <param name="ios-package" value="CDVPinDialog"/>
 		</feature>
 	  </config-file>
 
