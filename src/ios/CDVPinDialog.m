@@ -37,7 +37,7 @@
     [alertView show];
 
     [textField resignFirstResponder];
-    [textField setKeyboardType:UIKeyboardTypePhonePad];
+    [textField setKeyboardType:UIKeyboardTypeNumberPad];
     [textField becomeFirstResponder];
     
 }
