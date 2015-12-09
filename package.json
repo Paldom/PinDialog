@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-pindialog",
+  "version": "0.1.3",
+  "description": "PhoneGap / Cordova numeric password dialog plugin for Android and iOS.",
+  "cordova": {
+    "id": "cordova-plugin-pindialog",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paldom/PinDialog.git"
+  },
+  "keywords": [
+    "phonegap",
+    "android",
+    "ios",
+    "numeric",
+    "password",
+    "pin",
+    "dialog",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Domonkos Pal <public@dpal.hu> (https://github.com/Paldom)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Paldom/PinDialog/issues"
+  },
+  "homepage": "https://github.com/Paldom/PinDialog#readme"
+}
