@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-pindialog",
+  "name": "cordova-plugin-pin-dialog",
   "version": "0.1.3",
   "description": "PhoneGap / Cordova numeric password dialog plugin for Android and iOS.",
   "cordova": {
-    "id": "cordova-plugin-pindialog",
+    "id": "cordova-plugin-pin-dialog",
     "platforms": [
       "android",
       "ios"

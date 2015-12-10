@@ -5,8 +5,8 @@ PhoneGap numeric password dialog plugin for Android and iOS. Forked from https:/
 
 ## Installation
 
-Latest stable release: ```phonegap local plugin add cordova-plugin-pindialog```  
-or ```cordova plugin add cordova-plugin-pindialog```
+Latest stable release: ```phonegap local cordova-plugin-pin-dialog```  
+or ```cordova plugin add cordova-plugin-pin-dialog```
 
 Current state from git: ```phonegap local plugin add https://github.com/Paldom/PinDialog.git```  
 or ```cordova plugin add https://github.com/Paldom/PinDialog.git```
@@ -43,3 +43,7 @@ Callback:
             alert("Cancel");
         }
     };
+
+## License
+
+MIT License
