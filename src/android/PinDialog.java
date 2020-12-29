@@ -9,16 +9,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.text.InputType;
 import android.text.method.PasswordTransformationMethod;
+import android.view.WindowManager;
 import android.widget.EditText;
 
 
 public class PinDialog extends CordovaPlugin {
-
-    public ProgressDialog spinnerDialog = null;
 
     public PinDialog() {
     }
@@ -108,9 +106,11 @@ public class PinDialog extends CordovaPlugin {
                         }
                     });
 
-                    dlg.create();
-                    dlg.show();
-
+                    AlertDialog instance = dlg.create();
+                    instance.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
+                    instance.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+                    instance.show();
+                    promptInput.requestFocus();
                 };
             };
             this.cordova.getActivity().runOnUiThread(runnable);
